@@ -32,7 +32,7 @@ app.post('/signUp', (req, res) => {
     
     res.status(201).json({
         message: "User has been created",
-        status: 201
+        access_token: jwt.sign({ id: fundUser?.id }, "454870Sa"),
     })
 })
 
