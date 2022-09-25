@@ -7,6 +7,10 @@ const app = express()
 
 app.use(express.json())
 
+app.get('/', (_, res) => {
+    res.send('Working')
+})
+
 app.post("/login", (req, res) => {
     const { name, password } = req.body;
   
