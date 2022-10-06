@@ -41,4 +41,3 @@ app.post('/signUp', (req, res) => {
 })
 
 app.listen(8080, console.log(8080))
-  
